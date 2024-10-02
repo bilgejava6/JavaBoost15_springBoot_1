@@ -1,0 +1,35 @@
+# DİKKAT
+# 1- YML dosyalarında alt kırılımlar, tab sekmesi ile ifade edilie
+# yani bir bileşenin alt dallanmalaı tab eklenerek yazılır.
+# YANLIŞ KULLANIM
+#server:
+#port: 9090
+# DOĞRUSU
+#server:
+#  port: 9090
+# 2- Bir key in değerini atamak için :(iki nokta üstüste) kullanılır.
+# ve bir boşluk bırakılarak değer yazılır.
+#YANLIŞ
+#server:
+#  port:9090
+#DOĞRUSU
+#server:
+#  port: 9090
+# http -> 80
+# https -> 443 (SSL sertifikalı siteler)
+server:
+  port: 80
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5444/java15_hb1
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+
